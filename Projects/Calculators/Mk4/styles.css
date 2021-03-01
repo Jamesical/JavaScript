@@ -1,0 +1,67 @@
+*, *::before, *::after  /*selects all elements*/
+  {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif; /* Font and size below*/
+    font-weight: normal;
+  }
+  
+  body 
+  {
+    padding: 0; /*makes sure the color goes throught the whole background*/
+    margin: 0;
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  }
+  
+  .calculator-grid 
+  {
+    display: grid; /*takes the elements and organzines them per the setting below*/
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button  /*Changes the individual buttons characteristics */
+  {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover /*causes the color to change when you hover a button*/
+  {
+    background-color: rgba(255, 255, 255, .9);
+  }
+
+  .output /*This is were the answer is put*/
+  {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .output .previous-operand 
+  {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand 
+  {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .span-two /*This makes the AC button twice as large*/
+  {
+    grid-column: span 2;
+  } 

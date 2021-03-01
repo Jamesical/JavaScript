@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travis's Calculator Mk.3</title>
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+    </style>
+</head>
+<body>
+
+    <h1 id = "myH2">Calculator Mk.3 - Travis Saulat</h1>
+    <p id = "warn">!!!!WORK IN PROGRESS!!!! - Be sure to AC if you want to stop using the previous answer, the square only works for the first number - will probably be patched</p>
+
+
+    <p id = 'log'></p>
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class=previous-operand></div>
+            <div data-current-operand class="current-operand"></div>
+          </div>
+            <button onclick="noth()" class="span-two">AC</button>
+            <button onclick="DEL()">DEL</button>
+            <button onclick="square()">x^2</button>
+            <button onclick="onec()">1</button>
+            <button onclick="twoc()">2</button>
+            <button onclick="threec()">3</button>
+            <button onclick="div()">/</button>
+            <button onclick="fourc()">4</button>
+            <button onclick="fivec()">5</button>
+            <button onclick="sixc()">6</button>
+            <button onclick="mul()">x</button>
+            <button onclick="sevenc()">7</button>   
+            <button onclick="eightc()">8</button>
+            <button onclick="ninec()">9</button>
+            <button onclick="add()">+</button>
+            <button onclick="dotc()">.</button>
+            <button onclick="zeroc()">0</button>
+            <button onclick="equal()">=</button>
+            <button onclick="sub()">-</button>
+            
+             
+</div>
+    <script src = "script.js"></script>
+
+</body>
+</html>
