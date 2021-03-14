@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js" defer></script>
+    <title>Reading and Writing into Files</title>
+</head>
+
+<body>
+
+<!-- Heavily modified code from https://thirteenov.ciihuy.com/how-can-we-read-and-write-a-file-using-javascript/ usded
+     for learning file manipulation in Javascript, heavily modified original can be found by link-->
+
+<div class = "allBody">
+ <h1>Select a file to read:</h1>
+  
+    <p>First, pick a file, for example a text file with any text in it.</p>
+
+    <div id = myFileStyle>
+	<input type="file" id="myFile">
+    </div>  
+
+	<p>Then click Read button to read the file's content.</p>
+
+    <div class = "loadFileAsTextStyle"> 
+    <button onclick="loadFileAsText()">Read</button><br />
+    </div>
+
+	<h1>Content of loaded file</h1>
+	<textarea id="inputTextToSave"></textarea> <br />
+	<p>You can modify above text and save it using below button.</p>
+
+
+	<h1>Save the file</h1>
+    
+    <div class = 'saveFileStyle'>
+	<button onclick="savefile()">Save</button>
+    </div>
+
+	<p id="dlink">Click save button to generate download link.</p>
+
+
+    
+
+    <!--
+    <input id = 'input' type="text"> Input Text File Info Here
+    
+
+     <button id ="button" onclick="printout()">Click Here</button>
+    <button id ="putin" onclick="putindata()">Click Here First</button>
+
+    <p id="para"></p> 
+    -->
+
+</div>
+</body>
+</html>
